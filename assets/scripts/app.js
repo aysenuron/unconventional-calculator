@@ -13,12 +13,12 @@ function createAndWriteOutput (operator, resultBeforeCalc, calcNumber) {
 }
 
 // Logs calculation in console
-function logData (operationName, num0, num1, num2) {
+function logData (operationName, prevResult, userNumber, newResult) {
     const logEntry = {
         operation : operationName,
-        prevResult : num0,
-        userNumber : num1,
-        newResult : num2
+        prevResult : prevResult,
+        userNumber : userNumber,
+        newResult : newResult
     };
     logEntries.push(logEntry);
     console.log(logEntries);
